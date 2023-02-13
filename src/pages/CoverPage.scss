@@ -1,0 +1,46 @@
+@import "../styles/variables";
+
+.cover {
+    height: 100vh;
+    background-image: url(../assets/1.jpg);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &__name {
+        letter-spacing: 1rem;
+        display: block;
+        font-size: 5rem;
+        font-weight: 700;
+
+        &--left {
+            display: inline-block;
+               margin-right: 3rem;
+        }
+
+        &--right {
+            display: inline-block;
+            color: $color-white;
+        }
+    }
+
+    &__job {
+        letter-spacing: .5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        display: block;
+        letter-spacing: .5rem;
+
+        &--left {
+            display: inline-block;
+            
+        }
+
+        &--right {
+            margin-left: 5.6rem;
+            display: inline-block;
+            color: $color-white;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "../styles/variables";
+.main{
+    height:100vh;
+}
+
+.navigation {
+    position: fixed;
+    height: 100vh;
+    width: 3.5rem;
+    background-color: $color-black;
+
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    &__item {
+        &:hover {
+            background-color: $color-gray;
+        }
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        line-height: 2.5;
+        color: $color-white;
+        display: block;
+        height: 3.5rem;
+    }
+}
