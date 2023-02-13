@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CoverPage from "./pages/CoverPage";
 import NavigationPage from "./pages/NavigationPage";
 import AboutPage from "./pages/AboutPage";
+import ResumePage from "./pages/ResumePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,7 +21,7 @@ function App() {
         },
         {
           path: "/resume",
-          element: <CoverPage />,
+          element: <ResumePage />,
         },
         {
           path: "/portfolio",

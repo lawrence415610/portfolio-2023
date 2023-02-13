@@ -1,0 +1,17 @@
+@import "../styles/variables";
+
+.skillcard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &__container {
+        display: block;
+        width: 50%;
+        padding: 3rem;
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        color: $color-primary;
+    }
+}

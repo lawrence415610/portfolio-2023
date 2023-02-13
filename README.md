@@ -1,1 +1,1 @@
-This portfolio built with react, sass, react-bootstrap, react-router
+This portfolio built with react, sass, react-router
