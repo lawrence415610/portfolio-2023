@@ -2,15 +2,47 @@ import "./ResumePage.scss";
 import "../UI/Description";
 import TitleBig from "../UI/TitleBig";
 import TitleSmall from "../UI/TitleSmall";
-import InformationCard from "../UI/InformationCard";
+import InformationCards from "../components/InformationCards";
 import Description from "../UI/Description";
 import Emphasis from "../UI/Emphasis";
 
-const experience = [{ title: "UI/UX designer", time: "2020.8 - 2023.1", place: "datareachable", des: "work closely with " }];
+const experience = [
+  {
+    title: "UI/UX designer",
+    time: "2020.8 - 2023.1",
+    place: "datareachable",
+    des: "Work closely with front-end team to deliver design system, user experience design and graphic design.",
+  },
+  {
+    title: "Developer Intern",
+    time: "2020.5 - 2020.7",
+    place: "JR Academy",
+    des: "Work in developer team as front-end developer, develop user interfaces for team project.",
+  },
+  {
+    title: "Research Assistant",
+    time: "2019.4 - 2020.4",
+    place: "University of Wollongong",
+    des: "Work for academy website.",
+  },
+];
 
-const education = [{}];
+const education = [
+  {
+    title: "Master of Philosophy in Computer Science",
+    time: "2019.2 - 2022.2",
+    place: "University of Wollongong",
+    des: "Accomplished 1 conference paper and 1 journal paper.",
+  },
+  {
+    title: "Master of Design",
+    time: "2017.2 - 2018.12",
+    place: "Monash University",
+    des: "Read a lot of books.",
+  },
+];
 
-const AboutPage = () => {
+const ResumePage = () => {
   return (
     <section className="resume">
       <div className="resume__left">
@@ -24,11 +56,11 @@ const AboutPage = () => {
         <div className="resume__detail">
           <div className="resume__experience">
             <TitleSmall>My Experience</TitleSmall>
-            <InformationCard data={experience} />
+            <InformationCards data={experience} />
           </div>
           <div className="resume__education">
             <TitleSmall>My Education</TitleSmall>
-            <InformationCard data={education} />
+            <InformationCards data={education} />
           </div>
         </div>
       </div>
@@ -37,4 +69,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ResumePage;

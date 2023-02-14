@@ -1,12 +1,6 @@
 @import "../styles/variables";
 
-.resume{
-    display: flex;
-    height: 100%;
-
-    &__detail{
-        margin-top: 3rem;
-    }
+.contact{
     
     &__left{
         width: 50%;
@@ -16,7 +10,8 @@
 
     &__right{
         width: 50%;
-        background-image: url(../assets/3.JPG);
+        height: 100%;
+        background-image: url(../assets/4.JPG);
         background-size: cover;
     }
 }

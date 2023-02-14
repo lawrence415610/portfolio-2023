@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CoverPage from "./pages/CoverPage";
 import NavigationPage from "./pages/NavigationPage";
 import AboutPage from "./pages/AboutPage";
+
+import PortfolioPage from "./pages/PortfolioPage";
 import ResumePage from "./pages/ResumePage";
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
         },
         {
           path: "/portfolio",
-          element: <CoverPage />,
+          element: <PortfolioPage />,
         },
         {
           path: "/contact",
