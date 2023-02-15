@@ -1,0 +1,16 @@
+@import "../styles/variables";
+
+.card {
+    display: block;
+    width: 18rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    background-color: $color-gray-dark-1;
+    box-shadow: 0 1.5rem 1.8rem rgba($color-black, .9);
+    transition: all .3s;
+
+    &:hover{
+        transform: translateY(-.5rem);
+        box-shadow: 0 1.8rem 2rem $color-black;
+    }
+}

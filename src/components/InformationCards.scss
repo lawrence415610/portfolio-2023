@@ -1,10 +1,5 @@
 @import "../styles/variables";
 
-.card-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 .information{
     width: 50%;
@@ -16,5 +11,9 @@
         font-size: .8rem;
         padding-bottom: 1rem;
         color: $color-gray-light;
+    }
+    &__des{
+        text-align: justify;
+        hyphens: auto;
     }
 }

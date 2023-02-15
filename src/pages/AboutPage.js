@@ -8,6 +8,7 @@ import Skillcards from "../components/Skillcards";
 import Container from "../layout/Container";
 import ContainerLeft from "../layout/ContainerLeft";
 import ContainerRight from "../layout/ContainerRight";
+import Button from "../UI/Button";
 
 const AboutPage = () => {
   return (
@@ -21,7 +22,9 @@ const AboutPage = () => {
             enthusiastic about web development and I am a{" "}
             <Emphasis>result-oriented</Emphasis> problem solver.
           </Description>
-          <div className="about__btns">btn</div>
+          <div className="about__btns">
+            <Button>Download CV</Button>
+          </div>
           <TitleSmall>My Technical Stack</TitleSmall>
           <Skillcards />
         </ContainerLeft>

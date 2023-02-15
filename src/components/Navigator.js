@@ -16,13 +16,13 @@ const Navigator = () => {
           </NavLink>
         </li>
         <li className="navigation__item">
-          <NavLink className="navigation__icon" to="/resume">
-            <i className="bi bi-file-earmark-code"></i>
+          <NavLink className="navigation__icon" to="/portfolio">
+            <i className="bi bi-eye"></i>
           </NavLink>
         </li>
         <li className="navigation__item">
-          <NavLink className="navigation__icon" to="/portfolio">
-            <i className="bi bi-eye"></i>
+          <NavLink className="navigation__icon" to="/resume">
+            <i className="bi bi-file-earmark-code"></i>
           </NavLink>
         </li>
         <li className="navigation__item">

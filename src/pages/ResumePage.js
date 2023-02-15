@@ -5,6 +5,9 @@ import TitleSmall from "../UI/TitleSmall";
 import InformationCards from "../components/InformationCards";
 import Description from "../UI/Description";
 import Emphasis from "../UI/Emphasis";
+import Container from "../layout/Container";
+import ContainerLeft from "../layout/ContainerLeft";
+import ContainerRight from "../layout/ContainerRight";
 
 const experience = [
   {
@@ -14,8 +17,14 @@ const experience = [
     des: "Work closely with front-end team to deliver design system, user experience design and graphic design.",
   },
   {
+    title: "Survey Scripter",
+    time: "2020.7 - 2020.8",
+    place: "Ekas Market Research",
+    des: "Work in Ekas as a front-end developer, handle programming requirements of the  survey platform.",
+  },
+  {
     title: "Developer Intern",
-    time: "2020.5 - 2020.7",
+    time: "2020.4 - 2020.7",
     place: "JR Academy",
     des: "Work in developer team as front-end developer, develop user interfaces for team project.",
   },
@@ -44,27 +53,29 @@ const education = [
 
 const ResumePage = () => {
   return (
-    <section className="resume">
-      <div className="resume__left">
-        <TitleBig>My Resume</TitleBig>
-        <Description>
-          I am a <Emphasis>creative</Emphasis> problem solver. My education
-          background involves <Emphasis>design</Emphasis> and{" "}
-          <Emphasis>computer science</Emphasis> and I have{" "}
-          <Emphasis>working experience</Emphasis> in both fields.
-        </Description>
-        <div className="resume__detail">
-          <div className="resume__experience">
-            <TitleSmall>My Experience</TitleSmall>
-            <InformationCards data={experience} />
-          </div>
-          <div className="resume__education">
-            <TitleSmall>My Education</TitleSmall>
-            <InformationCards data={education} />
-          </div>
-        </div>
-      </div>
-      <div className="resume__right"></div>
+    <section className="section--resume">
+      <Container>
+        <ContainerLeft>
+            <TitleBig>My Resume</TitleBig>
+            <Description>
+              I am a <Emphasis>creative</Emphasis> problem solver. My education
+              background involves <Emphasis>design</Emphasis> and{" "}
+              <Emphasis>computer science</Emphasis> and I have{" "}
+              <Emphasis>working experience</Emphasis> in both fields.
+            </Description>
+            <div className="resume__detail">
+              <div className="resume__experience">
+                <TitleSmall>My Experience</TitleSmall>
+                <InformationCards data={experience} />
+              </div>
+              <div className="resume__education">
+                <TitleSmall>My Education</TitleSmall>
+                <InformationCards data={education} />
+              </div>
+            </div>
+        </ContainerLeft>
+        <ContainerRight img="/4.jpg"></ContainerRight>
+      </Container>
     </section>
   );
 };

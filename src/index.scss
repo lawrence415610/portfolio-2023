@@ -15,3 +15,25 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: none;
+    scrollbar-color: #00bdc9 #dedede;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #dedede;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #00bdc9;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}

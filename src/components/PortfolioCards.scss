@@ -1,0 +1,41 @@
+@import "../styles/variables";
+
+
+.portfolio {
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+    width: 18rem;
+    height: auto;
+    border-radius: 1.5rem;
+
+    box-shadow: 0 1.5rem 1.8rem rgba($color-black, .9);
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-.5rem);
+        box-shadow: 0 1.8rem 2rem $color-black;
+    }
+
+    &__textbox {
+        margin-top: 10rem;
+        background-color: $color-gray-dark-1;
+        padding: 1.5rem;
+    }
+
+
+    &__title {
+        font-size: 1rem;
+    }
+
+    &__type {
+        font-size: .9rem;
+    }
+
+    &__des {
+        font-size: .9rem;
+        text-align: justify;
+        hyphens: auto;
+    }
+}

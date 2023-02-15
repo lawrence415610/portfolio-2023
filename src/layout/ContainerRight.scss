@@ -1,6 +1,8 @@
 .container--right {
+    position: fixed;
+    top:0;
+    right:0;
     width: 50%;
     height: 100vh;
     background-size: cover;
-    overflow: hidden;
 }

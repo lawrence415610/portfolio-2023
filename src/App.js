@@ -18,16 +18,16 @@ function App() {
           element: <CoverPage />,
         },
         {
+          path: "/portfolio",
+          element: <PortfolioPage />,
+        },
+        {
           path: "/about",
           element: <AboutPage />,
         },
         {
           path: "/resume",
           element: <ResumePage />,
-        },
-        {
-          path: "/portfolio",
-          element: <PortfolioPage />,
         },
         {
           path: "/contact",

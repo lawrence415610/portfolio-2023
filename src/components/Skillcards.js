@@ -1,5 +1,6 @@
 import "./Skillcards.scss";
-
+import CardContainer from "../UI/CardContainer";
+import Card from "../UI/Card";
 const data = [
   {
     icon: "bi bi-filetype-html",
@@ -25,17 +26,17 @@ const data = [
 
 const Skillcards = () => {
   return (
-    <div className="skillcard">
+    <CardContainer>
       {data.map((item) => {
         return (
-          <div className="skillcard__container">
+          <Card className="skillcard__container">
             <i className={`${item.icon} skillcard__icon`}></i>
             <h4 className="skillcard__title">{item.title}</h4>
             <div className="skillcard__des">{item.des}</div>
-          </div>
+          </Card>
         );
       })}
-    </div>
+    </CardContainer>
   );
 };
 

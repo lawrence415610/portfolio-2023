@@ -1,18 +1,20 @@
+import Card from "../UI/Card";
+import CardContainer from "../UI/CardContainer";
 import "./InformationCards.scss";
 
 const InformationCards = ({ data }) => {
   return (
-    <div className="card-container">
+    <CardContainer>
       {data.map((item) => {
         return (
-          <div className="information">
+          <Card className="information">
             <h3 className="information__title">{item.title}</h3>
-            <div className="information__sub">{`${item.time} | ${item.place}`}</div>
+            <div className="information__sub">{item.time}<br></br>{item.place}</div>
             <div className="information__des">{item.des}</div>
-          </div>
+          </Card>
         );
       })}
-    </div>
+    </CardContainer>
   );
 };
 
