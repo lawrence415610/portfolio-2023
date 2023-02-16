@@ -20,6 +20,27 @@ const PortfolioPage = () => {
       link: "/",
       des: "A responsive Portfolio created by React. Use React Router to manage web links and use lazy loading to improve performance. Use SCSS to manage the CSS file.",
     },
+    {
+      img: "/1.jpg",
+      title: "Nature Landing Page",
+      type: "CSS",
+      link: "/",
+      des: "A landing page created by HTML5, CSS3, using SCSS to manage the files.",
+    },
+    {
+      img: "/1.jpg",
+      title: "React Redux Order App",
+      type: "React",
+      link: "/",
+      des: "Use React, react router, react redux, .",
+    },
+    {
+      img: "/1.jpg",
+      title: "React ",
+      type: "React",
+      link: "/",
+      des: "A responsive Portfolio created by React. Use React Router to manage web links and use lazy loading to improve performance. Use SCSS to manage the CSS file.",
+    },
   ];
 
   return (

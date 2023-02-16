@@ -1,15 +1,35 @@
 import { Link } from "react-router-dom";
-import Card from "../UI/Card";
 import CardContainer from "../UI/CardContainer";
 import "./PortfolioCards.scss";
 
 const PortfolioCards = ({ data }) => {
   return (
     <>
-      <div className="portfolio__tag">portfolio tag</div>
+      <ul className="portfolio__tags">
+        <li className="portfolio__tag">
+          <a href="#" className="portfolio__link">
+            All
+          </a>
+        </li>
+        <li className="portfolio__tag">
+          <a href="#" className="portfolio__link">
+            CSS
+          </a>
+        </li>
+        <li className="portfolio__tag">
+          <a href="#" className="portfolio__link">
+            React
+          </a>
+        </li>
+        <li className="portfolio__tag">
+          <a href="#" className="portfolio__link">
+            Next.js
+          </a>
+        </li>
+      </ul>
+
       <CardContainer>
         {data.map((item) => {
-          console.log(item.img);
           return (
             <div
               style={{
