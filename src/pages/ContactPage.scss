@@ -1,13 +1,56 @@
-.contact-details{
-    &__box{
+@import "../styles/variables";
 
+.contact-details {
+    
+    &__box {
+        margin-left: 3rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        justify-self: center;
+        gap: .5rem;
     }
 
-    &__icon{
+    &__icon {
+        font-size: 1.5rem;
+    }
+}
 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 3rem;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    &__text{
-        
+    &__email {
+        &:focus {
+            background-color: #fff;
+            padding: 1rem;
+        }
+
+        height: 2.5rem;
+        background-color: $color-gray-light;
+    }
+
+    &__text {
+        &:focus {
+            background-color: #fff;
+            padding: 0 1rem;
+        }
+
+        padding: 0 1rem;
+        height: 6rem;
+        background-color: $color-gray-light;
+    }
+
+    &__submit{
+        width: 10rem;
     }
 }

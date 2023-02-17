@@ -23,7 +23,7 @@ const AboutPage = () => {
             <Emphasis>result-oriented</Emphasis> problem solver.
           </Description>
           <div className="about__btns">
-            <Button>Download CV</Button>
+            <Button link="/resume.pdf">Download CV</Button>
           </div>
           <TitleSmall>My Technical Stack</TitleSmall>
           <Skillcards />
