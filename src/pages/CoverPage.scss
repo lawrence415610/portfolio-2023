@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     &__name {
         letter-spacing: 1rem;
         display: block;
@@ -16,7 +16,7 @@
 
         &--left {
             display: inline-block;
-               margin-right: 3rem;
+            margin-right: 3rem;
         }
 
         &--right {
@@ -34,7 +34,6 @@
 
         &--left {
             display: inline-block;
-            
         }
 
         &--right {

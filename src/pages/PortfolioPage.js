@@ -29,14 +29,14 @@ const PortfolioPage = () => {
     },
     {
       img: "/1.jpg",
-      title: "React Redux Order App",
+      title: "React Data Dashboard",
       type: "React",
       link: "/",
-      des: "Use React, react router, react redux, .",
+      des: "Use React, React router, React redux to build a data app to get important data.",
     },
     {
       img: "/1.jpg",
-      title: "React ",
+      title: "Team Kanban",
       type: "React",
       link: "/",
       des: "A responsive Portfolio created by React. Use React Router to manage web links and use lazy loading to improve performance. Use SCSS to manage the CSS file.",
