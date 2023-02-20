@@ -7,7 +7,6 @@ import ContainerLeft from "../layout/ContainerLeft";
 import ContainerRight from "../layout/ContainerRight";
 import Description from "../UI/Description";
 import Emphasis from "../UI/Emphasis";
-import Button from "../UI/Button";
 
 const ContactPage = () => {
   return (

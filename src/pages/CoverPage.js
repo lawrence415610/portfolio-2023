@@ -1,7 +1,9 @@
 import React from "react";
+
 import "./CoverPage.scss";
 
 const CoverPage = () => {
+
   return (
     <section className="cover">
       <h1 className="cover__title">

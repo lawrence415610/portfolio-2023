@@ -1,3 +1,5 @@
+@import "../styles/mixins";
+
 .card-container {
     width: 100%;
     display: flex;
@@ -5,4 +7,10 @@
     justify-content: center;
     justify-items: left;
     gap: 2rem;
+    padding-left: 3.5rem;
+
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
 }

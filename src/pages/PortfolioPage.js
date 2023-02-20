@@ -14,7 +14,7 @@ const PortfolioPage = () => {
 
   const data = [
     {
-      img: "/1.jpg",
+      img: "/portfolio.jpg",
       title: "React Personal Portfolio",
       type: "React",
       link: "/",

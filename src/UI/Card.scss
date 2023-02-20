@@ -1,4 +1,5 @@
 @import "../styles/variables";
+@import "../styles/mixins";
 
 .card {
     display: block;
@@ -13,4 +14,14 @@
         transform: translateY(-.5rem);
         box-shadow: 0 1.8rem 2rem $color-black;
     }
+
+                @include respond(tab-port) {
+                    width: 75%;
+                }
+
+    @include respond(phone){
+        width: 75%;
+    }
+
+    
 }
