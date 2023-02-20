@@ -1,4 +1,5 @@
 @import "../styles/variables";
+@import "../styles/mixins";
 
 .cover {
     height: 100vh;
@@ -16,15 +17,22 @@
         font-size: 5rem;
         font-weight: 700;
 
+        @include respond(tab-port){
+            letter-spacing: .5rem;
+            font-size: 4rem;
+        }
+
         &--left {
             display: inline-block;
             margin-right: 3rem;
+            @include respond(phone){
+                margin-right: 1rem;
+            }
         }
 
         &--right {
             display: inline-block;
             color: $color-white;
-            
         }
     }
 
@@ -41,6 +49,9 @@
 
         &--right {
             margin-left: 5.6rem;
+            @include respond(phone) {
+                    margin-left: 1rem;
+                }
             display: inline-block;
             color: $color-white;
         }

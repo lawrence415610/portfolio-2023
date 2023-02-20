@@ -13,7 +13,7 @@ const CoverPage = () => {
         </span>
         <span className="cover__job">
           <span className="cover__job--left">I'm a </span>
-          <span className="cover__job--right">creative developer.</span>
+          <span className="cover__job--right">creative developer</span>
         </span>
       </h1>
     </section>
