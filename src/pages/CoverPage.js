@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CoverPage.scss";
+import SpinnyLoader from "../components/SpinnyLoader";
 
 const CoverPage = () => {
+	const [isLoading, setIsLoading] = useState(true);
 
-  return (
-    <section className="cover">
-      <video className="cover__video" autoPlay muted loop>
-		<source src='/video/websiteVedio.mp4' type="video/mp4" />
-	  </video>
-    </section>
-  );
+	const handleLoadStart = () => {
+		setIsLoading(true);
+	};
+
+	const handleLoadedData = () => {
+		setIsLoading(false);
+	};
+
+	return (
+		<section className="cover">
+			{isLoading && <SpinnyLoader />}
+			<video
+				className="cover__video"
+				autoPlay
+				muted
+				loop
+				onLoadStart={handleLoadStart}
+				onLoadedData={handleLoadedData}
+			>
+				<source src="/video/websiteVedio.mp4" type="video/mp4" />
+			</video>
+		</section>
+	);
 };
 export default CoverPage;
