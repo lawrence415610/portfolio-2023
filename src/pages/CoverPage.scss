@@ -3,92 +3,18 @@
 
 .cover {
     height: 100vh;
-    background-image: url(../../public/1.jpg);
+    background-color: black;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 600ms ease;
-
-
-    &__name {
-        letter-spacing: 1rem;
-        display: block;
-        font-size: 5rem;
-        font-weight: 700;
-
-        @include respond(tab-port){
-            letter-spacing: .5rem;
-            font-size: 4rem;
-        }
-
-        &--left {
-            display: inline-block;
-            margin-right: 3rem;
-            @include respond(phone){
-                margin-right: 1rem;
-            }
-        }
-
-        &--right {
-            display: inline-block;
-            color: $color-white;
-        }
-    }
-
-    &__job {
-        letter-spacing: .5rem;
-        font-size: 1rem;
-        font-weight: 400;
-        display: block;
-        letter-spacing: .5rem;
-
-        &--left {
-            display: inline-block;
-        }
-
-        &--right {
-            margin-left: 5.6rem;
-            @include respond(phone) {
-                    margin-left: 1rem;
-                }
-            display: inline-block;
-            color: $color-white;
-        }
-    }
+	overflow: hidden;
+	position: relative;
 }
 
-.typewriter {
-    overflow: hidden;
-    border-right: .15em solid $color-white;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation:
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: $color-white;
-    }
+.cover__video{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
