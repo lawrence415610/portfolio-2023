@@ -24,7 +24,7 @@ const CoverPage = () => {
 				onLoadStart={handleLoadStart}
 				onLoadedData={handleLoadedData}
 			>
-				<source src="/video/websiteVedio.mp4" type="video/mp4" />
+				<source src="/video/introVedio.mp4" type="video/mp4" />
 			</video>
 		</section>
 	);
