@@ -1,54 +1,60 @@
-import { Link } from "react-router-dom";
-import CardContainer from "../UI/CardContainer";
+import { Link, NavLink } from "react-router-dom";
+import { Box, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import "./PortfolioCards.scss";
 
 const PortfolioCards = ({ data }) => {
-  return (
-    <>
-      <ul className="portfolio__tags">
-        <li className="portfolio__tag">
-          <a href="#" className="portfolio__link">
-            All
-          </a>
-        </li>
-        <li className="portfolio__tag">
-          <a href="#" className="portfolio__link">
-            CSS
-          </a>
-        </li>
-        <li className="portfolio__tag">
-          <a href="#" className="portfolio__link">
-            React
-          </a>
-        </li>
-        <li className="portfolio__tag">
-          <a href="#" className="portfolio__link">
-            Next.js
-          </a>
-        </li>
-      </ul>
+	return (
+		<Box>
+			<ul className="portfolio__tags">
+				<li className="portfolio__tag">
+					<NavLink href="#" className="portfolio__link">
+						All
+					</NavLink>
+				</li>
+				<li className="portfolio__tag">
+					<NavLink href="#" className="portfolio__link">
+						CSS
+					</NavLink>
+				</li>
+				<li className="portfolio__tag">
+					<NavLink href="#" className="portfolio__link">
+						React
+					</NavLink>
+				</li>
+				<li className="portfolio__tag">
+					<NavLink href="#" className="portfolio__link">
+						Next.js
+					</NavLink>
+				</li>
+			</ul>
 
-      <CardContainer>
-        {data.map((item) => {
-          return (
-            <div
-              style={{
-                backgroundImage: `url(${item.img})`,
-              }}
-              className="portfolio"
-            >
-              <Link to={item.link}></Link>
-              <div className="portfolio__textbox">
-                <h3 className="portfolio__title">{item.title}</h3>
-                <div className="portfolio__type">{item.type}</div>
-                <p className="portfolio__des">{item.des}</p>
-              </div>
-            </div>
-          );
-        })}
-      </CardContainer>
-    </>
-  );
+			<Box
+				sx={{
+					width: "100%",
+					padding: "40px",
+				}}
+			>
+				<ImageList variant="masonry" cols={2} gap={40}>
+					{data.map((item) => (
+						<Link to={item.link}>
+							<ImageListItem key={item.img}>
+								<img
+									src={item.img}
+									srcSet={item.img}
+									alt={item.title}
+									loading="lazy"
+								/>
+								<ImageListItemBar
+									position="below"
+									title={item.title}
+								/>
+							</ImageListItem>
+						</Link>
+					))}
+				</ImageList>
+			</Box>
+		</Box>
+	);
 };
 
 export default PortfolioCards;

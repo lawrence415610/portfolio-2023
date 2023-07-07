@@ -28,7 +28,7 @@ const AboutPage = () => {
           <TitleSmall>My Technical Stack</TitleSmall>
           <Skillcards />
         </ContainerLeft>
-        <ContainerRight img="/2.jpg"></ContainerRight>
+        <ContainerRight img="/coverImg2.png"></ContainerRight>
       </Container>
     </section>
   );

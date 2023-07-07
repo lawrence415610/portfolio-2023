@@ -1,12 +1,9 @@
 import "./PortfolioPage.scss";
 import "../UI/Description";
-import TitleBig from "../UI/TitleBig";
 import TitleSmall from "../UI/TitleSmall";
-import Description from "../UI/Description";
 import ContainerLeft from "../layout/ContainerLeft";
 import ContainerRight from "../layout/ContainerRight";
 import Container from "../layout/Container";
-import Emphasis from "../UI/Emphasis";
 import PortfolioCards from "../components/PortfolioCards";
 
 const PortfolioPage = () => {
@@ -47,21 +44,10 @@ const PortfolioPage = () => {
     <section className="section--portfolio">
       <Container className="portfolio">
         <ContainerLeft>
-          <TitleBig>My Portfolio</TitleBig>
-          <Description>
-            I am familiar with <Emphasis>HTML5</Emphasis>,{" "}
-            <Emphasis>CSS3</Emphasis>, to create{" "}
-            <Emphasis>Responsive Web application</Emphasis>. I also use{" "}
-            <Emphasis>Figma</Emphasis> to design, and use{" "}
-            <Emphasis>React</Emphasis> and <Emphasis>Redux</Emphasis> to deliver
-            highly-efficient front-end experience. I can also use{" "}
-            <Emphasis>Next.js</Emphasis> to create commercial website.
-          </Description>
-          <TitleSmall>My works</TitleSmall>
+          <TitleSmall>Demo Projects</TitleSmall>
           <PortfolioCards data={data}></PortfolioCards>
         </ContainerLeft>
-
-        <ContainerRight img="/3.jpg"></ContainerRight>
+        <ContainerRight img="/coverImg1.png"></ContainerRight>
       </Container>
     </section>
   );

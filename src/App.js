@@ -6,7 +6,6 @@ import AboutPage from "./pages/AboutPage";
 
 import PortfolioPage from "./pages/PortfolioPage";
 import ResumePage from "./pages/ResumePage";
-import ContactPage from "./pages/ContactPage";
 function App() {
   const router = createBrowserRouter([
     {
@@ -28,10 +27,6 @@ function App() {
         {
           path: "/resume",
           element: <ResumePage />,
-        },
-        {
-          path: "/contact",
-          element: <ContactPage />,
         },
       ],
     },

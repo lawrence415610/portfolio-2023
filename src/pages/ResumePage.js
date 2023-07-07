@@ -74,7 +74,7 @@ const ResumePage = () => {
               </div>
             </div>
         </ContainerLeft>
-        <ContainerRight img="/5.jpg"></ContainerRight>
+        <ContainerRight img="/coverImg3.png"></ContainerRight>
       </Container>
     </section>
   );

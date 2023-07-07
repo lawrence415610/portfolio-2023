@@ -1,6 +1,10 @@
 @import "../styles/variables";
 @import "../styles/mixins";
 
+.MuiImageListItemBar-title{
+	color: $color-primary;
+	text-decoration: none;
+}
 
 .portfolio {
     background-size: cover;
