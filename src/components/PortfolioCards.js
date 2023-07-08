@@ -15,7 +15,7 @@ import "./PortfolioCards.scss";
 
 const data = [
 	{
-		img: "/AIGCCover.jpg",
+		img: "/AIGCCover.png",
 		title: "AIGC Image Gallery",
 		type: "ai",
 		link: "https://css-practice-1.pages.dev/",
