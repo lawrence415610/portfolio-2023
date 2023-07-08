@@ -22,25 +22,6 @@
         transform: translateY(-.5rem);
         box-shadow: 0 1.8rem 2rem $color-black;
     }
-
-    &__tags {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-
-        @include respond(tab-port){
-            padding-left: 3rem;
-        }
-
-    }
-
-    &__tag {
-        list-style-type: none;
-        margin-left: 1rem;
-        display: block;
-    }
     
     &__link{
         font-size: .9rem;
