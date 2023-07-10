@@ -7,9 +7,6 @@ import Container from "../layout/Container";
 import PortfolioCards from "../components/PortfolioCards";
 
 const PortfolioPage = () => {
-
-  
-
   return (
     <section className="section--portfolio">
       <Container className="portfolio">

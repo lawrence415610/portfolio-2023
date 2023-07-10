@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
 	Box,
@@ -56,6 +56,24 @@ const PortfolioCards = () => {
 			? data
 			: data.filter((item) => item.type === alignment);
 
+	const [screenSize, setScreenSize] = useState({
+		width: window.innerWidth,
+	});
+
+	useEffect(() => {
+		const handleResize = () => {
+			setScreenSize({
+				width: window.innerWidth,
+			});
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	return (
 		<Box>
 			<ToggleButtonGroup
@@ -79,7 +97,11 @@ const PortfolioCards = () => {
 					padding: "40px",
 				}}
 			>
-				<ImageList variant="masonry" cols={2} gap={40}>
+				<ImageList
+					variant="masonry"
+					cols={screenSize.width < 1080 ? 1 : 2}
+					gap={12}
+				>
 					{filteredData.map((item) => (
 						<Link to={item.link}>
 							<ImageListItem key={item.title}>

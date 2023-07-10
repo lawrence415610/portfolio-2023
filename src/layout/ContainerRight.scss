@@ -9,7 +9,6 @@
     background-size: cover;
 
     @include respond(tab-port){
-        position: relative;
-        width: 100%;
+        display: none;
     }
 }
