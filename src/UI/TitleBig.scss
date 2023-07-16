@@ -3,12 +3,84 @@
 
 .title--1 {
     text-align: center;
-    font-size: 6rem;
-    margin-bottom: -4rem;
     z-index: -1;
     color: rgba($color-gray, .5);
 
     @include respond(tab-port){
         font-size: 5rem;
     }
+}
+
+// Vars --------------------------------------------------------
+
+// Keep synced w/ js
+$numKeyframes: 20;
+
+$fadeRadius: 150;
+@function randomAbout0($domain) {
+	@return random(2*$domain) - $domain
+}
+
+.container {
+	position: relative;
+}
+
+.title{
+	text-align: center;
+	font-weight: 700;
+	color: $color-primary-dark;
+	text-transform: uppercase;
+}
+
+.letter {
+	position: absolute;
+}
+
+@for $i from 1 through $numKeyframes {
+	@keyframes fade-in-#{$i} {
+		from {
+			opacity: 0;
+			transform:
+				translate3d(
+					randomAbout0($fadeRadius) + 0px,
+					randomAbout0($fadeRadius) + 0px,
+					randomAbout0($fadeRadius) + 0px
+				)
+				rotate3d(
+					random(),
+					random(),
+					random(),
+					180deg
+				);
+			filter: blur(5px);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+			filter: unset;
+		}
+	}
+	@keyframes fade-out-#{$i} {
+		from {
+			opacity: 1;
+			transform: none;
+			filter: unset;
+		}
+		to {
+			opacity: 0;
+			transform:
+				translate3d(
+					randomAbout0($fadeRadius) + 0px,
+					randomAbout0($fadeRadius) + 0px,
+					randomAbout0($fadeRadius) + 0px
+				)
+				rotate3d(
+					random(),
+					random(),
+					random(),
+					180deg
+				);
+			filter: blur(5px);
+		}
+	}
 }
