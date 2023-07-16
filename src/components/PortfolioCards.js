@@ -15,25 +15,25 @@ import "./PortfolioCards.scss";
 
 const data = [
 	{
-		img: "/AIGCCover.png",
-		title: "AIGC Image Gallery",
-		type: "ai",
-		link: "https://css-practice-1.pages.dev/",
-		des: "A website to show the image gallery of AIGC. All the images are created by midjournay and other image generation tools. Use SCSS to manage the CSS file.",
-	},
-	{
-		img: "/1.jpg",
-		title: "React Data Dashboard",
-		type: "react",
-		link: "https://ddsn-code-test.pages.dev/",
-		des: "Use React, React router, React redux to build a data app to get important data.",
-	},
-	{
 		img: "/iasanaCover.png",
 		title: "Iasana Team Kanban",
 		type: "react",
 		link: "https://agile-project-manager.now.sh/home",
 		des: "React, Redux, Typescript, Storybook, Material UI, React Beautiful DND, React Router, React Hook Form, React Testing Library, Jest",
+	},
+	{
+		img: "/AIGCCover.png",
+		title: "AIGC Image Gallery",
+		type: "ai",
+		link: "https://css-practice-1.pages.dev/",
+		des: "A website to show the image gallery of AIGC. All the images are created by midjourney and other image generation tools. Use SCSS to manage the CSS file.",
+	},
+	{
+		img: "/1.jpg",
+		title: "DDSN Code Test",
+		type: "react",
+		link: "https://ddsn-code-test.pages.dev/",
+		des: "It is a pure HTML CSS JS website as a code test given by a digital agency, designed as client request.",
 	},
 	{
 		img: "/portfolioCover.png",

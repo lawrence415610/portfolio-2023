@@ -2,26 +2,26 @@ import "./Skillcards.scss";
 import CardContainer from "../UI/CardContainer";
 import Card from "../UI/Card";
 const data = [
-  {
-    icon: "bi bi-filetype-html",
-    title: "HTML5",
-    des: "Use senmantic HTML to improve the SEO result.",
-  },
-  {
-    icon: "bi bi-filetype-scss",
-    title: "SCSS",
-    des: "Use advanced CSS skill to create beautiful animations.",
-  },
-  {
-    icon: "bi bi-filetype-jsx",
-    title: "React",
-    des: "Use reusable UI library to streamline front-end work.",
-  },
-  {
-    icon: "bi bi-database",
-    title: "Redux",
-    des: "Use centralized state manage tool to build complex web app.",
-  },
+	{
+		icon: "bi bi-filetype-jsx",
+		title: "React",
+		des: "Knowledge of multiple front-end languages and libraries (e.g. HTML/ CSS, JavaScript, XML, jQuery)",
+	},
+	{
+		icon: "bi bi-database",
+		title: "Redux",
+		des: "Use centralized state manage tool to build complex web app.",
+	},
+	{
+		icon: "bi bi-box-seam",
+		title: "NodeJs",
+		des: "Knowledge of multiple back-end languages (e.g. C#, Python) and Node.js",
+	},
+	{
+		icon: "bi bi-pencil",
+		title: "Design",
+		des: "Excellent UI / UX creativity and skill",
+	},
 ];
 
 const Skillcards = () => {

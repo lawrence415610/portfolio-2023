@@ -9,6 +9,7 @@ import Container from "../layout/Container";
 import ContainerLeft from "../layout/ContainerLeft";
 import ContainerRight from "../layout/ContainerRight";
 import Button from "../UI/Button";
+import MySkill from "../components/MySkill";
 
 const AboutPage = () => {
   return (
@@ -26,6 +27,7 @@ const AboutPage = () => {
             <Button link="/resume.pdf">Download CV</Button>
           </div>
           <TitleSmall>My Technical Stack</TitleSmall>
+		  <MySkill />
           <Skillcards />
         </ContainerLeft>
         <ContainerRight img="/coverImg2.png"></ContainerRight>
