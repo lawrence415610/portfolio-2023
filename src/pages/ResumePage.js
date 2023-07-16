@@ -74,7 +74,11 @@ const ResumePage = () => {
               </div>
             </div>
         </ContainerLeft>
-        <ContainerRight img="/coverImg3.png"></ContainerRight>
+        <ContainerRight>
+			<img style={{
+				height: "100vh",
+			}} src="/coverImg3.png" alt="coverImg3" />
+		</ContainerRight>
       </Container>
     </section>
   );

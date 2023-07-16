@@ -1,0 +1,23 @@
+@import '../styles/variables.scss';
+.pip {
+  width: 17px;
+  height: 17px;
+  margin: 7px;
+  background-color: rgba(157, 0, 201, 0.5);
+  border-radius: 100%;
+  transition: all .3s ease-in;
+}
+
+.pip--on {
+  background-color: $color-primary;
+  transform: scale(1.1);
+}
+
+.clock {
+  display: flex
+}
+
+.binary-digit-group {
+  display: flex;
+  margin: 0 6px;
+}

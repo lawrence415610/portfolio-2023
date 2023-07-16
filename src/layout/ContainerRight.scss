@@ -1,14 +1,15 @@
 @import "../styles/mixins";
 
 .container--right {
-    position: fixed;
-    top:0;
-    right:0;
-    width: 40%;
-    height: 100vh;
-    background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 40%;
+	height: 100vh;
+	background-size: cover;
 
-    @include respond(tab-port){
-        display: none;
-    }
+	@include respond(tab-port) {
+		display: none;
+	}
 }
+

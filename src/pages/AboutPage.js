@@ -30,7 +30,11 @@ const AboutPage = () => {
 		  <MySkill />
           <Skillcards />
         </ContainerLeft>
-        <ContainerRight img="/coverImg2.png"></ContainerRight>
+        <ContainerRight>
+			<img style={{
+				height: "100vh",
+			}} src="/coverImg2.png" alt="coverImg2" />
+		</ContainerRight>
       </Container>
     </section>
   );

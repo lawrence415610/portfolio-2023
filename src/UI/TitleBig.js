@@ -267,7 +267,7 @@ class RandomText extends React.Component {
 		} else {
 			return (
 				<div
-					className={"container" + " " + this.props.className}
+					className={"container " + this.props.className}
 					style={{
 						height: this.state.numRows * this.props.fontHeight,
 						width: this.props.width,
@@ -306,7 +306,7 @@ class TitleBig extends React.Component {
 		super();
 		this.state = {
 			animate: "in",
-			width: document.body.offsetWidth * 0.6,
+			width: document.body.offsetWidth * 0.5,
 		};
 		if (fadeInOut) {
 			setInterval(() => {
