@@ -35,7 +35,7 @@ function App() {
 
 	return (
 		<>
-			<AnimatedCursor  innerSize={20} outerSize={20} />
+			<AnimatedCursor  innerSize={20} outerSize={20} innerScale={2} outerScale={2.5} />
 			<RouterProvider router={router} />
 		</>
 	);
