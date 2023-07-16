@@ -7,6 +7,8 @@ import Container from "../layout/Container";
 import PortfolioCards from "../components/PortfolioCards";
 import Box from "@mui/material/Box";
 
+//TODO: Add github chart, using heatmap and github api
+
 const PortfolioPage = () => {
   return (
 		<section className="section--portfolio">
@@ -20,6 +22,7 @@ const PortfolioPage = () => {
 							paddingBottom: "40px",
 						}}
 					>
+						
 						<img
 							src="https://ghchart.rshah.org/9d00c9/lawrence415610"
 							alt="Lawrence's Github Chart"
