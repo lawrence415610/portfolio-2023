@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ResumePage from "./pages/ResumePage";
 import AnimatedCursor from "react-animated-cursor";
+// let's finish this
 function App() {
 	const router = createBrowserRouter([
 		{
