@@ -2,17 +2,17 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 @import "./styles/variables";
 @import "./styles/mixins";
-
+@import "react-calendar-heatmap/dist/styles.css";
 
 body {
-    font-family: "Poppins", sans-serif;
-    color: $color-gray;
+	font-family: "Poppins", sans-serif;
+	color: $color-gray;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -24,16 +24,15 @@ body {
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 12px;
+	width: 12px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #dedede12;
+	background: #dedede12;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(157, 0, 201, 0.322);
-    border-radius: 10px;
-    border: 1px solid #ffffff60;
+	background-color: rgba(157, 0, 201, 0.322);
+	border-radius: 10px;
+	border: 1px solid #ffffff60;
 }
-

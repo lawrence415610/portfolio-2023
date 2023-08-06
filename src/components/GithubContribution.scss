@@ -1,0 +1,20 @@
+@import "../styles/variables";
+
+.react-calendar-heatmap {
+	.color-scale-0{
+		fill: rgba($color-primary, 0.2);
+	}
+	.color-scale-1 {
+		fill: rgba($color-primary, 0.5);
+	}
+	.color-scale-2 {
+		fill: rgba($color-primary, 0.8);
+	}
+	.color-scale-3 {
+		fill: $color-primary;
+	}
+	.color-scale-4 {
+		fill: $color-primary-dark;
+	}
+	
+}

@@ -8,24 +8,34 @@ import PortfolioCards from "../components/PortfolioCards";
 import TitleBig from "../UI/TitleBig";
 import Clock from "../components/BinaryClock";
 import { Box } from "@mui/system";
-//TODO: use GraphQL to fetch Github commit data and build heatmap myself
+import GithubContributions from "../components/GithubContribution";
+
 const PortfolioPage = () => {
+
 	return (
 		<section className="section--portfolio">
 			<Container className="portfolio">
 				<ContainerLeft>
 					<TitleBig>My Portfolio</TitleBig>
+					<TitleSmall>Github Contributions</TitleSmall>
+					<Box display={"flex"} justifyContent={"center"}>
+						<Box sx={{ width: "85%" }}>
+							<GithubContributions />
+						</Box>
+					</Box>
 					<TitleSmall>Demo Projects</TitleSmall>
 					<PortfolioCards />
 				</ContainerLeft>
 				<ContainerRight>
 					<Box>
-						<Box sx={{
-							position: "absolute",
-							top: "50%",
-							left: "50%",
-							transform: "translate(-50%, -50%)",
-						}}>
+						<Box
+							sx={{
+								position: "absolute",
+								top: "50%",
+								left: "50%",
+								transform: "translate(-50%, -50%)",
+							}}
+						>
 							<Clock />
 						</Box>
 						<img
