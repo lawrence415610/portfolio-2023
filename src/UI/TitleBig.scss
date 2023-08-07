@@ -1,76 +1,98 @@
 @import "../styles/variables";
 @import "../styles/mixins";
 
-// Vars --------------------------------------------------------
-
-// Keep synced w/ js
-$numKeyframes: 20;
-
-$fadeRadius: 150;
-@function randomAbout0($domain) {
-	@return random(2*$domain) - $domain
-}
-
-.container {
-	position: relative;
-}
-
-.title{
+.title--1 {
 	text-align: center;
 	font-weight: 700;
 	color: $color-primary-dark;
 	text-transform: uppercase;
-}
+	width: 100%;
 
-.letter {
-	position: absolute;
-}
+	font-size: 8rem;
 
-@for $i from 1 through $numKeyframes {
-	@keyframes fade-in-#{$i} {
-		from {
-			opacity: 0;
-			transform:
-				translate3d(
-					randomAbout0($fadeRadius) + 0px,
-					randomAbout0($fadeRadius) + 0px,
-					randomAbout0($fadeRadius) + 0px
-				)
-				rotate3d(
-					random(),
-					random(),
-					random(),
-					180deg
-				);
-			filter: blur(5px);
-		}
-		to {
-			opacity: 1;
-			transform: none;
-			filter: unset;
-		}
+	@include respond(tab-land) {
+		font-size: 5rem;
 	}
-	@keyframes fade-out-#{$i} {
-		from {
-			opacity: 1;
-			transform: none;
-			filter: unset;
-		}
-		to {
-			opacity: 0;
-			transform:
-				translate3d(
-					randomAbout0($fadeRadius) + 0px,
-					randomAbout0($fadeRadius) + 0px,
-					randomAbout0($fadeRadius) + 0px
-				)
-				rotate3d(
-					random(),
-					random(),
-					random(),
-					180deg
-				);
-			filter: blur(5px);
-		}
+
+	@include respond(tab-port) {
+		font-size: 5rem;
+	}
+
+	@include respond(phone) {
+		font-size: 3rem;
 	}
 }
+
+// Vars --------------------------------------------------------
+
+// Keep synced w/ js
+// $numKeyframes: 20;
+
+// $fadeRadius: 150;
+// @function randomAbout0($domain) {
+// 	@return random(2*$domain) - $domain
+// }
+
+// .container {
+// 	position: relative;
+// }
+
+// .title{
+// 	text-align: center;
+// 	font-weight: 700;
+// 	color: $color-primary-dark;
+// 	text-transform: uppercase;
+// }
+
+// .letter {
+// 	position: absolute;
+// }
+
+// @for $i from 1 through $numKeyframes {
+// 	@keyframes fade-in-#{$i} {
+// 		from {
+// 			opacity: 0;
+// 			transform:
+// 				translate3d(
+// 					randomAbout0($fadeRadius) + 0px,
+// 					randomAbout0($fadeRadius) + 0px,
+// 					randomAbout0($fadeRadius) + 0px
+// 				)
+// 				rotate3d(
+// 					random(),
+// 					random(),
+// 					random(),
+// 					180deg
+// 				);
+// 			filter: blur(5px);
+// 		}
+// 		to {
+// 			opacity: 1;
+// 			transform: none;
+// 			filter: unset;
+// 		}
+// 	}
+// 	@keyframes fade-out-#{$i} {
+// 		from {
+// 			opacity: 1;
+// 			transform: none;
+// 			filter: unset;
+// 		}
+// 		to {
+// 			opacity: 0;
+// 			transform:
+// 				translate3d(
+// 					randomAbout0($fadeRadius) + 0px,
+// 					randomAbout0($fadeRadius) + 0px,
+// 					randomAbout0($fadeRadius) + 0px
+// 				)
+// 				rotate3d(
+// 					random(),
+// 					random(),
+// 					random(),
+// 					180deg
+// 				);
+// 			filter: blur(5px);
+// 		}
+// 	}
+// }
