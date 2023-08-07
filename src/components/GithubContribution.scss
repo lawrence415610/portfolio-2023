@@ -8,13 +8,15 @@
 		fill: rgba($color-primary, 0.5);
 	}
 	.color-scale-2 {
-		fill: rgba($color-primary, 0.8);
+		fill: rgba($color-primary, 0.7);
 	}
 	.color-scale-3 {
-		fill: $color-primary;
+		fill: rgba($color-primary, 0.9);
 	}
 	.color-scale-4 {
-		fill: $color-primary-dark;
+		fill: $color-primary;
 	}
-	
+	.color-scale-5{
+		fill: $color-primary;
+	}
 }
