@@ -15,6 +15,13 @@ import "./PortfolioCards.scss";
 
 const data = [
 	{
+		img: "/designPortfolio.png",
+		title: "Design Portfolio",
+		type: "design",
+		link: "https://issuu.com/yelinliu/docs/yelin_s_portfolio_v3",
+		des: "My personal UI/UX design portfolio.",
+	},
+	{
 		img: "/iasanaCover.png",
 		title: "Iasana Team Kanban",
 		type: "react",
@@ -24,7 +31,7 @@ const data = [
 	{
 		img: "/AIGCCover.png",
 		title: "AIGC Image Gallery",
-		type: "ai",
+		type: "design",
 		link: "https://css-practice-1.pages.dev/",
 		des: "A website to show the image gallery of AIGC. All the images are created by midjourney and other image generation tools. Use SCSS to manage the CSS file.",
 	},
@@ -88,7 +95,7 @@ const PortfolioCards = () => {
 			>
 				<ToggleButton value="all">All</ToggleButton>
 				<ToggleButton value="react">React</ToggleButton>
-				<ToggleButton value="ai">AI</ToggleButton>
+				<ToggleButton value="design">Design</ToggleButton>
 				<ToggleButton value="nextjs">NestJs</ToggleButton>
 			</ToggleButtonGroup>
 			<Box
