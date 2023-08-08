@@ -15,18 +15,25 @@ import "./PortfolioCards.scss";
 
 const data = [
 	{
-		img: "/designPortfolio.png",
-		title: "Design Portfolio",
-		type: "design",
-		link: "https://issuu.com/yelinliu/docs/yelin_s_portfolio_v3",
-		des: "My personal UI/UX design portfolio.",
-	},
-	{
 		img: "/iasanaCover.png",
 		title: "Iasana Team Kanban",
 		type: "react",
 		link: "https://agile-project-manager.now.sh/home",
 		des: "React, Redux, Typescript, Storybook, Material UI, React Beautiful DND, React Router, React Hook Form, React Testing Library, Jest",
+	},
+	{
+		img: "/meydit.png",
+		title: "Meydit Website",
+		type: "nextjs",
+		link: "https://beta.meyd.it/",
+		des: "A startup project, a platform for fashion creatives crowd sourcing.",
+	},
+	{
+		img: "/designPortfolio.png",
+		title: "Design Portfolio",
+		type: "design",
+		link: "https://issuu.com/yelinliu/docs/yelin_s_portfolio_v3",
+		des: "My personal UI/UX design portfolio.",
 	},
 	{
 		img: "/AIGCCover.png",
@@ -48,13 +55,6 @@ const data = [
 		type: "react",
 		link: "https://yelinliu.com",
 		des: "A responsive Portfolio created by React. Use React Router to manage web links and use lazy loading to improve performance. Use SCSS to manage the CSS file.",
-	},
-	{
-		img: "/meydit.png",
-		title: "Meydit Website",
-		type: "nextjs",
-		link: "https://beta.meyd.it/",
-		des: "A startup project, a platform for fashion creatives crowd sourcing.",
 	},
 ];
 
