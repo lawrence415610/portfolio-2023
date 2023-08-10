@@ -20,6 +20,7 @@ const CoverPage = () => {
 				className="cover__video"
 				autoPlay
 				muted
+				playsInline
 				loop
 				onLoadStart={handleLoadStart}
 				onLoadedData={handleLoadedData}
