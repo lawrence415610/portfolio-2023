@@ -10,12 +10,7 @@ import ContainerLeft from "../layout/ContainerLeft";
 import ContainerRight from "../layout/ContainerRight";
 
 const experience = [
-	{
-		title: "Full-stack Web Developer",
-		time: "2023.8 - current",
-		place: "Meydit",
-		des: "Full-stack web development, testing web application, developing features on both front-end and back-end.",
-	},
+
 	{
 		title: "Full-stack Web Developer",
 		time: "2023.4 - 2023.8",
