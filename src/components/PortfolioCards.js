@@ -22,13 +22,6 @@ const data = [
 		des: "React, Redux, Typescript, Storybook, Material UI, React Beautiful DND, React Router, React Hook Form, React Testing Library, Jest",
 	},
 	{
-		img: "/meydit.png",
-		title: "Meydit Website",
-		type: "nextjs",
-		link: "https://beta.meyd.it/",
-		des: "A startup project, a platform for fashion creatives crowd sourcing.",
-	},
-	{
 		img: "/designPortfolio.png",
 		title: "Design Portfolio",
 		type: "design",
