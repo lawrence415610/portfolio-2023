@@ -25,7 +25,7 @@ const data = [
 		img: "/designPortfolio.png",
 		title: "Design Portfolio",
 		type: "design",
-		link: "https://issuu.com/yelinliu/docs/yelin_s_portfolio_v3",
+		link: "https://drive.google.com/file/d/1ePmi6nvIoYwl7As8Ohf5GHbPt7x0VNmn/view?usp=drive_link",
 		des: "My personal UI/UX design portfolio.",
 	},
 	{
