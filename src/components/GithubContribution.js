@@ -44,9 +44,9 @@ const GithubContributions = () => {
 		<CalendarHeatmap
 			values={transformedData}
 			classForValue={(value) => {
-				if (!value) {
-					return "color-empty";
-				}
+				if(value.count > 5) {
+					return `color-scale-5`;
+				}				
 				return `color-scale-${value.count}`;
 			}}
 		/>
