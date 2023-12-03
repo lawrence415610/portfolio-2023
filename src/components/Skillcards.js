@@ -4,8 +4,8 @@ import Card from "../UI/Card";
 const data = [
 	{
 		icon: "bi bi-filetype-jsx",
-		title: "React",
-		des: "Knowledge of multiple front-end languages and libraries (e.g. HTML/ CSS, JavaScript, XML, jQuery)",
+		title: "React / Angular",
+		des: "Knowledge of multiple front-end languages and libraries (e.g. HTML/ CSS, JavaScript, jQuery)",
 	},
 	{
 		icon: "bi bi-database",

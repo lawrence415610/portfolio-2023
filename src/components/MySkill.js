@@ -17,6 +17,7 @@ const TAGS = [
 	"CSS",
 	"JavaScript",
 	"Typescript",
+	"Angular",
 	"Tailwind",
 	"React",
 	"Next.js",
