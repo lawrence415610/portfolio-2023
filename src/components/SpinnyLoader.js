@@ -1,8 +1,8 @@
 import './SpinnyLoader.scss';
 const SpinnyLoader = () => {
 	return (
-		<div class="spinny-loader">
-			<div class="spinny-circle"></div>
+		<div className="spinny-loader">
+			<div className="spinny-circle"></div>
 		</div>
 	);
 }

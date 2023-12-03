@@ -109,8 +109,8 @@ const PortfolioCards = () => {
 					cols={screenSize.width < 1080 ? 1 : 2}
 					gap={12}
 				>
-					{filteredData.map((item) => (
-						<Link to={item.link}>
+					{filteredData.map((item, index) => (
+						<Link to={item.link} key={index}>
 							<ImageListItem key={item.title}>
 								<img
 									src={item.img}

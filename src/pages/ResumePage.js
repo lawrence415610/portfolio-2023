@@ -11,8 +11,14 @@ import ContainerRight from "../layout/ContainerRight";
 
 const experience = [
 	{
+		title: "Junior Software Engineer",
+		time: "2023.11 - current",
+		place: "Firehawk Systems",
+		des: "Software development for Firehawk CRM Systems.",
+	},
+	{
 		title: "Full-stack Web Developer",
-		time: "2023.4 - 2023.8",
+		time: "2023.4 - 2023.11",
 		place: "Lyra Education",
 		des: "Learning about full-stack web development.",
 	},
@@ -23,14 +29,8 @@ const experience = [
 		des: "Work closely with front-end team to deliver design system, user experience design and graphic design.",
 	},
 	{
-		title: "Survey Scripter",
-		time: "2020.7 - 2020.8",
-		place: "Ekas Market Research",
-		des: "Work in Ekas as a front-end developer, handle programming requirements of the  survey platform.",
-	},
-	{
 		title: "Developer Intern",
-		time: "2020.4 - 2020.7",
+		time: "2020.4 - 2020.8",
 		place: "JR Academy",
 		des: "Work in developer team as front-end developer, develop user interfaces for team project.",
 	},
