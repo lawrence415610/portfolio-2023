@@ -48,8 +48,8 @@ class Clock extends React.Component {
 		return (
 			<div className="app">
 				<div className="clock">
-					{this.state.digits.map((digit) => (
-						<BinaryDigitGroup group={digit} />
+					{this.state.digits.map((digit, index) => (
+						<BinaryDigitGroup key={index} group={digit} />
 					))}
 				</div>
 			</div>

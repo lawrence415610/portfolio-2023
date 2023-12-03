@@ -27,9 +27,9 @@ const data = [
 const Skillcards = () => {
   return (
     <CardContainer>
-      {data.map((item) => {
+      {data.map((item,index) => {
         return (
-          <Card className="skillcard__container">
+          <Card key={index} className="skillcard__container">
             <i className={`${item.icon} skillcard__icon`}></i>
             <h4 className="skillcard__title">{item.title}</h4>
             <div className="skillcard__des">{item.des}</div>
