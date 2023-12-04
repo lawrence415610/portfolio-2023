@@ -14,11 +14,18 @@ const { Client } = require("@notionhq/client");
 
 // Initializing a client
 const notion = new Client({
-	auth: process.env.NOTION_TOKEN,
+	auth: process.env.NOTION_KEY,
 });
 
 const AboutPage = () => {
-	console.log(notion);
+	async function getDatabase() {
+		const response = await notion.databases.query({
+			database_id: process.env.NOTION_DATABASE_ID,
+		});
+		console.log(response);
+	}
+	getDatabase();
+	
 	return (
 		<section className="section--about">
 			<Container>
