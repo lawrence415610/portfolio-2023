@@ -16,7 +16,7 @@ const PortfolioPage = () => {
 		<section className="section--portfolio">
 			<Container className="portfolio">
 				<ContainerLeft>
-					<TitleBig>My Portfolio</TitleBig>
+					<TitleBig>Portfolio</TitleBig>
 					<TitleSmall>Github Contributions</TitleSmall>
 					<Box display={"flex"} justifyContent={"center"}>
 						<Box sx={{ width: "85%" }}>

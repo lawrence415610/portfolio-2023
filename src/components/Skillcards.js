@@ -5,22 +5,22 @@ const data = [
 	{
 		icon: "bi bi-filetype-jsx",
 		title: "React / Angular",
-		des: "Knowledge of multiple front-end languages and libraries (e.g. HTML/ CSS, JavaScript, jQuery)",
+		des: "Knowledge of multiple front-end languages and libraries (e.g. HTML/ CSS, JavaScript, jQuery, Angular, React, TailwindCSS)",
 	},
 	{
 		icon: "bi bi-database",
 		title: "Redux",
-		des: "Use centralized state manage tool to build complex web app.",
+		des: "Can use centralized state manage tool to build complex web app.",
 	},
 	{
 		icon: "bi bi-box-seam",
-		title: "NodeJs",
-		des: "Knowledge of multiple back-end languages (e.g. C#, Python) and Node.js",
+		title: "NodeJs, SQL",
+		des: "Knowledge of multiple back-end languages (e.g. C#, Python) and Node.js, Express, MongoDB, SQL",
 	},
 	{
 		icon: "bi bi-pencil",
-		title: "Design",
-		des: "Excellent UI / UX creativity and skill",
+		title: "UX Design",
+		des: "UI / UX creativity and skill",
 	},
 ];
 

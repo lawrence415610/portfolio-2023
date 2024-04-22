@@ -10,29 +10,16 @@ import ContainerLeft from "../layout/ContainerLeft";
 import ContainerRight from "../layout/ContainerRight";
 import Button from "../UI/Button";
 import MySkill from "../components/MySkill";
-const { Client } = require("@notionhq/client");
 
-// Initializing a client
-const notion = new Client({
-	auth: process.env.NOTION_KEY,
-});
 
-const AboutPage = () => {
-	async function getDatabase() {
-		const response = await notion.databases.query({
-			database_id: process.env.NOTION_DATABASE_ID,
-		});
-		console.log(response);
-	}
-	getDatabase();
-	
+const AboutPage = () => {	
 	return (
 		<section className="section--about">
 			<Container>
 				<ContainerLeft>
 					<TitleBig>About Me</TitleBig>
 					<Description>
-						Hello, I'm <Emphasis>Yelin</Emphasis>. I am a{" "}
+						Hello, I'm <Emphasis>Lawrence</Emphasis>. I am a{" "}
 						<Emphasis>creative</Emphasis> developer based on Sydney.
 						I am enthusiastic about web development and I am a{" "}
 						<Emphasis>result-oriented</Emphasis> problem solver.
