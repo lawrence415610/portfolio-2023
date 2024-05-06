@@ -15,10 +15,17 @@ import "./PortfolioCards.scss";
 
 const data = [
 	{
+		img: "/moegpt.png",
+		title: "MoeGPT",
+		type: "react",
+		link: "https://github.com/lawrence415610/moegpt",
+		des: "A React app that uses OpenAI's GPT-3.5 to generate text based on user input, fully utilizing the firebase services.",
+	},
+	{
 		img: "/iasanaCover.png",
 		title: "Iasana Team Kanban",
 		type: "react",
-		link: "https://agile-project-manager.now.sh/home",
+		link: "https://github.com/lawrence415610/iasana-frontend",
 		des: "React, Redux, Typescript, Storybook, Material UI, React Beautiful DND, React Router, React Hook Form, React Testing Library, Jest",
 	},
 	{
