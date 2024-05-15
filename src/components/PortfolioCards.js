@@ -25,7 +25,7 @@ const data = [
 		img: "/iasanaCover.png",
 		title: "Iasana Team Kanban",
 		type: "react",
-		link: "https://github.com/lawrence415610/iasana-frontend",
+		link: "https://github.com/lawrence415610/iasana",
 		des: "React, Redux, Typescript, Storybook, Material UI, React Beautiful DND, React Router, React Hook Form, React Testing Library, Jest",
 	},
 	{
