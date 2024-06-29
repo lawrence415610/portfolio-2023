@@ -15,6 +15,13 @@ import "./PortfolioCards.scss";
 
 const data = [
 	{
+		img: "/snakeCover.png",
+		title: "Snake Game",
+		type: "games",
+		link: "https://snake-6jr.pages.dev",
+		des: "A snake game built with Typescript, clean code standard."
+	},
+	{
 		img: "/moegpt.png",
 		title: "MoeGPT",
 		type: "react",
@@ -104,6 +111,7 @@ const PortfolioCards = () => {
 				<ToggleButton value="react">React</ToggleButton>
 				<ToggleButton value="design">Design</ToggleButton>
 				<ToggleButton value="nextjs">NestJs</ToggleButton>
+				<ToggleButton value="games">Game</ToggleButton>
 			</ToggleButtonGroup>
 			<Box
 				sx={{
