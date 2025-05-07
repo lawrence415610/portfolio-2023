@@ -15,6 +15,13 @@ import "./PortfolioCards.scss";
 
 const data = [
 	{
+		img: "/flippybird.jpg",
+		title: "Flippy bird Game",
+		type: "games",
+		link: "https://lawrence415610.itch.io/flippy-test",
+		des: "A flippy bird game built by Godot Engine."
+	},
+	{
 		img: "/snakeCover.png",
 		title: "Snake Game",
 		type: "games",
